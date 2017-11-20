@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "787159320903",
+    "firebase_url": "https://wifichooser-39ed0.firebaseio.com",
+    "project_id": "wifichooser-39ed0",
+    "storage_bucket": "wifichooser-39ed0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787159320903:android:08597182ef0bf43b",
+        "android_client_info": {
+          "package_name": "sme.com.br.wifichooser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787159320903-lidmhu1ti6t1nlmi868jju4m5d88ectj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sme.com.br.wifichooser",
+            "certificate_hash": "a2e21bec7d99e8561d8a21da0e4f2edd47c8f19e"
+          }
+        },
+        {
+          "client_id": "787159320903-oash2s8tpuvjirb2ig6462r9s8ps6095.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJqy4areIREKuH_u8Zq1Y9ScTO6rvQTKc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787159320903-oash2s8tpuvjirb2ig6462r9s8ps6095.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/oi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sme.com.br.wifichooser.Info">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:fontFamily="cursive"
+            android:text="Informações sobre os tipos de Criptografia de rede"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="-8dp"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:fontFamily="serif"
+            android:text="WPA-PSK (AES): Aqui a escolha é o protocolo wireless WPA com criptografia AES mais moderna, porém é fácil de ser violado."
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="41dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:text="WPA2-PSK (TKIP): Esta combinação usa o padrão moderno WPA2 com criptografia antiga TKIP. Não é segura, e só é uma boa ideia se você tiver aparelhos mais antigos que não se conectam à rede WPA2-PSK (AES)."
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="109dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:text="WPA2-PSK (AES): Esta sim é a opção mais segura. Ela usa WPA2 (o padrão de criptografia Wi-Fi mais atual) "
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="198dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:text="WPA/WPA2-PSK (TKIP/AES) (recomendado): Esta é uma opção que engloba todas as possibilidades e dispositivos. Ela vai habilitar o WPA e o WPA2 com TKIP e AES. Haverá máxima compatibilidade com aparelhos antigos, mas também significa que um ataque de hacker pode invadir sua rede, já que você terá aparelhos mais velhos (e menos seguros) envolvidos na rede. "
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="-15dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
