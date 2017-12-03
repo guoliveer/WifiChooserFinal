@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.net.wifi.WifiManager;
@@ -30,6 +31,7 @@ public class WifiActivity extends AppCompatActivity {
 
     WifiManipulado wifi = new WifiManipulado();
 
+
     Firebase bd;
     Firebase save;
 
@@ -42,8 +44,9 @@ public class WifiActivity extends AppCompatActivity {
 
 
     }
+
     public void more (View view) {
-        Intent intent = new Intent(WifiActivity.this, Info.class);
+        Intent intent = new Intent(this, Info.class);
          startActivity(intent);
     }
     // Write a message to the database
@@ -59,51 +62,45 @@ public class WifiActivity extends AppCompatActivity {
        final TextView result = (TextView) findViewById(R.id.value);
         final TextView Mostrando = (TextView) findViewById(R.id.WifiLevel);
         final List<ScanResult> results = wifi.getConections(this);
-        String SSID="";
+        String SSID="Trojan";
         int Level=-200;
         int i = 0;
         String Nivel="";
         String Crypto="";
-        String PassWord="gustavo1";
+        String PassWord="";
         Context contexto = getApplicationContext();
-        String texto = "Redes Encontradas";
+        String texto1 = "Redes Encontradas";
+        String texto2 = "As redes foram salvas";
         int duracao = Toast.LENGTH_SHORT;
 
-        Toast toast = Toast.makeText(contexto, texto,duracao);
+        Toast toast = Toast.makeText(contexto, texto1,duracao);
         toast.show();
         if(results!=null){
 
           final   StringBuilder info = new StringBuilder();
 
-            for(ScanResult connection: results){
-                if (connection.level>=-40){
-                    Nivel="ÓTIMO";
-                    SSID=connection.SSID;
-                }else if (connection.level<=-41 && connection.level>=-70){
-                    Nivel="BOM";
-                    SSID=connection.SSID;
-                }else if (connection.level<=-71){
-                    Nivel="RUIM";
-                    SSID=connection.SSID;
+            for(ScanResult connection: results) {
+                if (connection.level >= -40) {
+                    Nivel = "ÓTIMO";
+                    SSID = connection.SSID;
+                } else if (connection.level <= -41 && connection.level >= -70) {
+                    Nivel = "BOM";
+                    SSID = connection.SSID;
+                } else if (connection.level <= -71) {
+                    Nivel = "RUIM";
+                    SSID = connection.SSID;
                 }
                 result.setText(info.append(connection.SSID).append("\n").append("MAC: ").append(connection.BSSID).append("\n").append("Crypto: ").append(connection.capabilities).append("\n").append(Nivel).append("\n\n\n"));
-                i+=1;
-                myRef.setValue("teste\n"+SSID);
+                i += 1;
+                DatabaseReference myRef = database.getReference().child("Redes").child(SSID).child(Nivel);
+                myRef.setValue("Senha");
 
-                          }
+            }
             Mostrando.setText(""+i);
+            Toast toast1 = Toast.makeText(contexto, texto2,duracao);
+            toast1.show();
 
-            List<String> myList = new ArrayList<String>(){
-                {
-                    add("AAA");
-                    add("BBB");
-                }
-            };
-
-            bd=new Firebase("https://wifichooser-39ed0.firebaseio.com/"+myList);
-
-
-
+            bd=new Firebase("https://wifichooser-39ed0.firebaseio.com/"+SSID);
 
             wc.SSID ="\""+SSID+"\"";
 
@@ -121,10 +118,10 @@ public class WifiActivity extends AppCompatActivity {
 
             }
                 wc.preSharedKey="\""+PassWord+"\"";
-                //wifimanager.disconnect();
-                //int netId = wifimanager.addNetwork(wc);
+                wifimanager.disconnect();
+              //  int netId = wifimanager.addNetwork(wc);
                // wifimanager.enableNetwork(netId, true);
-               // wifimanager.reconnect();
+                wifimanager.reconnect();
 
             // / connect to and enable the connection
 

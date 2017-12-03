@@ -25,11 +25,11 @@
         android:id="@+id/Wifi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Redes Disponíveis:"
-        tools:text="Sugestão"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button" />
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2"
+        android:text="Redes Disponíveis:"
+        tools:text="Sugestão" />
 
     <TextView
         android:id="@+id/WifiLevel"
@@ -47,13 +47,13 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onClick"
-        android:text="@string/textButton"
         android:layout_below="@+id/label"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="77dp"
-        android:layout_marginStart="77dp"></Button>
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2"
+        android:onClick="onClick"
+        android:text="@string/textButton"></Button>
 
     <ScrollView
         android:id="@+id/scrollView"
