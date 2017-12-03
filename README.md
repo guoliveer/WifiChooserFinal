@@ -6,7 +6,12 @@ Trabalho de Padrões de Projeto
 <center><h1>Video do APP</h1></center>
 https://drive.google.com/file/d/1MySIJSQOG4sw-Zvj40ELzd0J3YVKAaM0/view?usp=sharing
 
+<center><h1>Artigo WifiChooser</h1></center>
+<iframe src="https://github.com/guoliveer/WifiChooserFinal/blob/master/ArtigoWifiChooser.pdf" width="600" height="780" style="border: none;"></iframe>
+
+
 <center><h1>Telas do APP</h1></center>
+https://github.com/guoliveer/WifiChooserFinal/blob/master/ArtigoWifiChooser.pdf
 
 <img width=300 height =400 src="https://github.com/guoliveer/WifiChooserFinal/blob/master/fotos/Screenshot_2017-10-02-19-15-47.png">
 
