@@ -18,6 +18,10 @@ https://github.com/guoliveer/WifiChooserFinal/blob/master/ArtigoWifiChooser.pdf
 
 <img width=300 height =400 src="https://github.com/guoliveer/WifiChooserFinal/blob/master/fotos/Screenshot_2017-10-02-19-15-57.png">
 
+<center><h3>Banco no Firebase </h3></center>
+<img width=300 height =400 src="https://github.com/guoliveer/WifiChooserFinal/blob/master/fotos/Capturar.PNG
+">
+
 <h1>Fluxograma da aplicação</h1>
 
 <img width=300 height =400 src="https://github.com/guoliveer/WifiChooserFinal/blob/master/fotos/fluxo.png">
