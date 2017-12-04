@@ -2,7 +2,7 @@
 
 Trabalho de Padrões de Projeto
 <center><h1>Diagrama de classe</h1></center>
-<img width=1000 height =400 src="https://github.com/guoliveer/WifiChooser-master/blob/master/fotos/Diagrama%20de%20Classes.png">
+<img width=1000 height =400 src="https://github.com/guoliveer/WifiChooserFinal/blob/master/fotos/Diagrama%20de%20Classes.png">
 <center><h1>Video do APP</h1></center>
 https://drive.google.com/file/d/1MySIJSQOG4sw-Zvj40ELzd0J3YVKAaM0/view?usp=sharing
 
